@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "local": "pipenv run uvicorn main:app --reload",
+        "build": "docker build -t fictionalpotato .",
+        "run": "docker run -p 8000:80 fictionalpotato"
+    }
+}
